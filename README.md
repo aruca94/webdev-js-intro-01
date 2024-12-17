@@ -44,7 +44,7 @@ To view the project locally, you can either open the project files in your code 
 - [X] In `assignment.js`:
     - [X] Create a variable named `book` that cannot be reassigned. Set the value to your favorite book.
     - [X] Create a variable named `activity` that can be reassigned. Set the value to your favorite activity.
-    - [ ] Update the function `updateActivitySentence()`.
+    - [X] Update the function `updateActivitySentence()`.
     - [ ] Update the function `render()`.
 
 
