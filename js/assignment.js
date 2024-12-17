@@ -10,6 +10,7 @@ const submissionBtn = document.getElementById("submission-btn")
 // Declare a constant variable named "book" and assign
 // the name of your favorite book to that variable.
 const book = "The Power of One More";
+const nextBook = "Outwitting The Devil";
 
 // Declare a mutable variable named "activity" and assign
 // an activity to it.
@@ -30,10 +31,20 @@ function updateActivitySentence() {
 
 function render() {
     // Finish writing this function
+    // updateBookSentence();
+    updateActivitySentence();
+
+//   TODO: Look at a toggle function on mdn and refactor if possible
+
 
 }
 
 submissionBtn.addEventListener("click", function () {
+    if(bookAnswerEl.innerText !== book) {
+        bookAnswerEl.innerText = book;
+    }else{
+        bookAnswerEl.innerText = nextBook;
+    }
     // Calling the function that renders the update
     // when the button is clicked
     render();
