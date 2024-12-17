@@ -13,7 +13,7 @@ const book = "The Power of One More";
 
 // Declare a mutable variable named "activity" and assign
 // an activity to it.
-let activity = "";
+let activity = "kayaking";
 
 
 function updateBookSentence() {
