@@ -20,7 +20,12 @@ let activity = "kayaking";
 function updateBookSentence() {
     // Sets the text inside the element with the id of book answer.
     // innerText is one of many properties on a HTML element.
-    bookAnswerEl.innerText = book
+    // bookAnswerEl.innerText = book
+    if(bookAnswerEl.innerText !== book) {
+        bookAnswerEl.innerText = book;
+    }else{
+        bookAnswerEl.innerText = nextBook;
+    }
 }
 
 function updateActivitySentence() {
@@ -31,20 +36,12 @@ function updateActivitySentence() {
 
 function render() {
     // Finish writing this function
-    // updateBookSentence();
+    updateBookSentence();
     updateActivitySentence();
-
-//   TODO: Look at a toggle function on mdn and refactor if possible
-
-
 }
 
 submissionBtn.addEventListener("click", function () {
-    if(bookAnswerEl.innerText !== book) {
-        bookAnswerEl.innerText = book;
-    }else{
-        bookAnswerEl.innerText = nextBook;
-    }
+
     // Calling the function that renders the update
     // when the button is clicked
     render();
